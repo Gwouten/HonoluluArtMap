@@ -7,6 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Dosis-Bold.ttf">
+            <string>Dosis-Bold</string>
+        </array>
         <array key="Dosis-Light.ttf">
             <string>Dosis-Light</string>
         </array>
@@ -109,21 +112,177 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
             </objects>
             <point key="canvasLocation" x="1566" y="1736"/>
         </scene>
-        <!--Overview-->
+        <!--Art Walk-->
         <scene sceneID="2Ir-nQ-cfx">
             <objects>
                 <viewController id="Zct-nc-ebE" customClass="ArtListViewController" customModule="HonoluluArtMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U7Y-4x-Pw4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ALO-Ib-dYL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="6QC-fG-Mnn" detailTextLabel="KLS-uU-rIC" style="IBUITableViewCellStyleSubtitle" id="t8V-po-NQ5">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t8V-po-NQ5" id="AUx-SK-DWt">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ARTWORK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6QC-fG-Mnn">
+                                                    <rect key="frame" x="15" y="15" width="93.5" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
+                                                    <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Discipline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KLS-uU-rIC">
+                                                    <rect key="frame" x="15" y="47" width="70" height="25.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="20"/>
+                                                    <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <segue destination="nqb-SW-MSR" kind="show" identifier="ListToDetailSegue" id="P7S-W9-qlB"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zct-nc-ebE" id="Xxo-Am-cm3"/>
+                                    <outlet property="delegate" destination="Zct-nc-ebE" id="NFc-37-Po2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ALO-Ib-dYL" firstAttribute="leading" secondItem="S1V-wB-m4k" secondAttribute="leading" id="2AF-CK-3mr"/>
+                            <constraint firstItem="S1V-wB-m4k" firstAttribute="bottom" secondItem="ALO-Ib-dYL" secondAttribute="bottom" id="DR6-Ek-3Ox"/>
+                            <constraint firstItem="S1V-wB-m4k" firstAttribute="trailing" secondItem="ALO-Ib-dYL" secondAttribute="trailing" id="eqV-Jh-fbs"/>
+                            <constraint firstItem="ALO-Ib-dYL" firstAttribute="top" secondItem="U7Y-4x-Pw4" secondAttribute="top" id="rm2-b1-ms4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="S1V-wB-m4k"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Overview" image="list.bullet" catalog="system" id="vwb-Ap-l5t"/>
+                    <navigationItem key="navigationItem" title="Art Walk" id="mY5-Ha-V1H"/>
+                    <connections>
+                        <outlet property="tableView" destination="ALO-Ib-dYL" id="OF0-h9-BjW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAf-5Y-vho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="878"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="877.51124437781118"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="9dc-jg-ujo">
+            <objects>
+                <viewController id="nqb-SW-MSR" customClass="DetailViewController" customModule="HonoluluArtMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZK-3E-akD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-EC-pp8">
+                                <rect key="frame" x="0.0" y="44" width="375" height="215"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="215" id="lgy-j3-Qxe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By artist - 2003" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLm-Ti-pP1">
+                                <rect key="frame" x="20" y="307" width="335" height="23"/>
+                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artwork Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-BO-QBY">
+                                <rect key="frame" x="20" y="279" width="335" height="28"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDy-w6-mGe">
+                                <rect key="frame" x="16" y="352" width="343" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="bIU-Ag-AkT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blP-i2-neV">
+                                <rect key="frame" x="16" y="535" width="343" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YIX-Y7-ohc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funded by the Works Progress Administration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOR-MV-Wzf">
+                                <rect key="frame" x="20" y="575" width="335" height="23"/>
+                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60l-ha-wc2">
+                                <rect key="frame" x="20" y="551" width="335" height="23"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-Ry-kA0">
+                                <rect key="frame" x="20" y="361" width="335" height="166"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="ZillaSlab-Regular" family="Zilla Slab" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="2RQ-un-2rc"/>
+                            <constraint firstItem="sLm-Ti-pP1" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="5Fr-cU-va4"/>
+                            <constraint firstItem="kOR-MV-Wzf" firstAttribute="top" secondItem="60l-ha-wc2" secondAttribute="bottom" constant="1" id="5of-dr-X0E"/>
+                            <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="LTt-BO-QBY" secondAttribute="trailing" constant="20" id="66c-cu-B76"/>
+                            <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="IEU-Ry-kA0" secondAttribute="trailing" constant="20" id="Ecs-n9-vQm"/>
+                            <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="sLm-Ti-pP1" secondAttribute="trailing" constant="20" id="Fqo-VT-EBw"/>
+                            <constraint firstItem="dDy-w6-mGe" firstAttribute="trailing" secondItem="MZK-3E-akD" secondAttribute="trailingMargin" id="Jb2-mH-zWk"/>
+                            <constraint firstItem="blP-i2-neV" firstAttribute="trailing" secondItem="MZK-3E-akD" secondAttribute="trailingMargin" id="KJP-Uk-PuN"/>
+                            <constraint firstItem="dDy-w6-mGe" firstAttribute="leading" secondItem="MZK-3E-akD" secondAttribute="leadingMargin" id="N0T-KR-FNd"/>
+                            <constraint firstItem="LTt-BO-QBY" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="Nv8-1b-zfI"/>
+                            <constraint firstItem="LTt-BO-QBY" firstAttribute="top" secondItem="Ln5-EC-pp8" secondAttribute="bottom" constant="20" id="Oif-Mw-fvc"/>
+                            <constraint firstItem="60l-ha-wc2" firstAttribute="top" secondItem="blP-i2-neV" secondAttribute="bottom" constant="15" id="Oks-ma-Hpa"/>
+                            <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="60l-ha-wc2" secondAttribute="trailing" constant="20" id="QM7-2k-Rj1"/>
+                            <constraint firstItem="dDy-w6-mGe" firstAttribute="top" secondItem="sLm-Ti-pP1" secondAttribute="bottom" constant="22" id="Qea-yp-uUd"/>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="SnF-0X-1jN"/>
+                            <constraint firstItem="0ZU-CR-r3T" firstAttribute="bottom" secondItem="kOR-MV-Wzf" secondAttribute="bottom" constant="20" id="UPD-AN-PO4"/>
+                            <constraint firstItem="IEU-Ry-kA0" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="YPN-D5-0VY"/>
+                            <constraint firstItem="60l-ha-wc2" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="ZxQ-Zt-giA"/>
+                            <constraint firstItem="IEU-Ry-kA0" firstAttribute="top" secondItem="dDy-w6-mGe" secondAttribute="bottom" constant="8" id="dNR-5g-aeo"/>
+                            <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="kOR-MV-Wzf" secondAttribute="trailing" constant="20" id="dfB-xd-259"/>
+                            <constraint firstItem="sLm-Ti-pP1" firstAttribute="top" secondItem="LTt-BO-QBY" secondAttribute="bottom" id="eom-5Z-Rmv"/>
+                            <constraint firstItem="blP-i2-neV" firstAttribute="leading" secondItem="MZK-3E-akD" secondAttribute="leadingMargin" id="kUg-Oz-34f"/>
+                            <constraint firstAttribute="trailing" secondItem="Ln5-EC-pp8" secondAttribute="trailing" id="mG5-Rj-4IU"/>
+                            <constraint firstItem="blP-i2-neV" firstAttribute="top" secondItem="IEU-Ry-kA0" secondAttribute="bottom" constant="8" id="oLQ-8A-4zr"/>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="oMO-Sq-5Zf"/>
+                            <constraint firstItem="kOR-MV-Wzf" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="zWB-pY-M0x"/>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" id="ztB-Sn-gag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ZU-CR-r3T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="T0y-7y-IkY"/>
+                    <connections>
+                        <outlet property="artistYearLbl" destination="sLm-Ti-pP1" id="gP2-pf-xij"/>
+                        <outlet property="creditsLbl" destination="kOR-MV-Wzf" id="9lS-tZ-lsm"/>
+                        <outlet property="descriptionLbl" destination="IEU-Ry-kA0" id="eXf-kr-yLO"/>
+                        <outlet property="imageView" destination="Ln5-EC-pp8" id="Ym1-Lt-8Bj"/>
+                        <outlet property="titleLbl" destination="LTt-BO-QBY" id="GSX-Re-RMf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iAE-4T-XOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3340" y="877.51124437781118"/>
         </scene>
         <!--Art Map-->
         <scene sceneID="irp-CK-aUH">
@@ -154,13 +313,32 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                     </tabBar>
                     <connections>
                         <segue destination="J6R-zW-6Bg" kind="relationship" relationship="viewControllers" id="cbH-Ab-bGF"/>
-                        <segue destination="Zct-nc-ebE" kind="relationship" relationship="viewControllers" id="TNe-It-PXp"/>
+                        <segue destination="kLr-E5-nHg" kind="relationship" relationship="viewControllers" id="TNe-It-PXp"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="C6w-mK-XMW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I05-Vo-UsV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="877.51124437781118"/>
+        </scene>
+        <!--Overview-->
+        <scene sceneID="vAD-tV-TJK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kLr-E5-nHg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Overview" image="list.bullet" catalog="system" id="vwb-Ap-l5t"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nUu-PO-Hxn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zct-nc-ebE" kind="relationship" relationship="rootViewController" id="Uev-UO-zcf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90f-Y5-TeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565.5999999999999" y="877.51124437781118"/>
         </scene>
     </scenes>
     <resources>

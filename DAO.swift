@@ -22,18 +22,41 @@ class DAO {
             let rawData = try Data.init(contentsOf: url!)
             let jsonData = try JSONSerialization.jsonObject(with: rawData) as! [NSObject]
             for item in jsonData {
+                // Not all data is present, so check first!
+                
+                var dataCreator = item.value(forKey: "creator")
+                if dataCreator == nil {
+                    dataCreator = "Onbekend"
+                }
+                
+                var dataDate = item.value(forKey: "date")
+                if dataDate == nil {
+                    dataDate = "Onbekend"
+                }
+                
+                var dataTitle = item.value(forKey: "title")
+                if dataTitle == nil {
+                     dataTitle = "No Title"
+                }
+                
+                var dataCredit = item.value(forKey: "credit")
+                if dataCredit == nil {
+                     dataCredit = "No info"
+                }
+                
                 // Add new artwork to array
                 allArt.append(
                     Art.init(
-                        creator:      item.value(forKey: "creator")      as! String,
-                        date:         item.value(forKey: "date")         as! String,
+                        creator:      dataCreator                        as! String,
+                        date:         dataDate                           as! String,
                         description:  item.value(forKey: "description")  as! String,
                         locationname: item.value(forKey: "location")     as! String,
                         imagefile:    item.value(forKey: "imagefile")    as! String,
                         discipline:   item.value(forKey: "discipline")   as! String,
-                        title:        item.value(forKey: "title")        as! String,
+                        title:        dataTitle                          as! String,
                         latitude:     item.value(forKey: "latitude")     as! String,
-                        longitude:    item.value(forKey: "longitude")    as! String
+                        longitude:    item.value(forKey: "longitude")    as! String,
+                        credit:       dataCredit                         as! String
                     )
                 )
             }
