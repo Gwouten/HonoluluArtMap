@@ -1,24 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Light.ttf">
+            <string>Dosis-Light</string>
+        </array>
+        <array key="ZillaSlab-Regular.ttf">
+            <string>ZillaSlab-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HonoluluArtMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Honolulu-waikiki.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="0Z2-ML-gZL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBa-7e-8cL" userLabel="Header">
+                                <rect key="frame" x="60" y="27" width="255" height="112"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcP-3q-23G">
+                                        <rect key="frame" x="20" y="20" width="62" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="62" id="Xm1-Hn-48S"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ZillaSlab-Regular" family="Zilla Slab" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HONOLULU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1A-PS-k3F">
+                                        <rect key="frame" x="0.0" y="28" width="255" height="64"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OcP-3q-23G" firstAttribute="leading" secondItem="yBa-7e-8cL" secondAttribute="leading" constant="20" id="28N-Uw-B3O"/>
+                                    <constraint firstItem="B1A-PS-k3F" firstAttribute="top" secondItem="yBa-7e-8cL" secondAttribute="top" constant="28" id="2x1-XM-bXs"/>
+                                    <constraint firstItem="OcP-3q-23G" firstAttribute="top" secondItem="yBa-7e-8cL" secondAttribute="top" constant="20" id="NaN-Yb-2a1"/>
+                                    <constraint firstItem="B1A-PS-k3F" firstAttribute="top" secondItem="OcP-3q-23G" secondAttribute="bottom" constant="-13" id="Ru2-QT-Aor"/>
+                                    <constraint firstAttribute="trailing" secondItem="B1A-PS-k3F" secondAttribute="trailing" id="WJu-r9-NcF"/>
+                                    <constraint firstItem="B1A-PS-k3F" firstAttribute="centerX" secondItem="yBa-7e-8cL" secondAttribute="centerX" id="f4n-8b-gmN"/>
+                                    <constraint firstItem="B1A-PS-k3F" firstAttribute="leading" secondItem="yBa-7e-8cL" secondAttribute="leading" id="kbM-Tt-KHp"/>
+                                    <constraint firstAttribute="bottom" secondItem="B1A-PS-k3F" secondAttribute="bottom" constant="20" id="oTm-HR-i4j"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U69-Ls-59c">
+                                <rect key="frame" x="40" y="151" width="295" height="476"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tt-K0-ldj">
+                                        <rect key="frame" x="20" y="20" width="255" height="436"/>
+                                        <string key="text">In het Hawaïaans betekent de naam "beschutte haven". Wanneer de naam voor het eerst werd gebruikt, is niet precies bekend. De haven van Honolulu werd door de plaatselijke bevolking "Kulolia" genoemd. Toen het Britse schip Butterworth in 1794 de haven binnenvoer, noemde kapitein William Brown de haven "Fair Haven". Anderen spraken van "Brown's Harbor". De naam "Honolulu" kwam enige tijd daarna in gebruik.
+
+Honolulu werd al snel de grootste haven van Hawaï. Destijds was de handel in sandelhout aanzienlijk. Verder was Honolulu een belangrijk steunpunt voor walvisvaarders.
+In 1850 werd Honolulu door koning Kamehameha III tot hoofdstad van het koninkrijk Hawaï uitgeroepen. Toen Hawaï in 1898 door de Verenigde Staten werd ingelijfd als Amerikaans Territorium bleef Honolulu de hoofdstad, en hetzelfde was het geval toen Hawaï in 1959 een Amerikaanse staat werd.
+
+Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook voor toerisme van belang. In de nabijheid liggen het beroemde strand van Waikiki en de Amerikaanse marinebasis Pearl Harbor die op 7 december 1941 het doelwit was van de Japanse verrassingsaanval waardoor de Verenigde Staten bij de Tweede Wereldoorlog betrokken raakte.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="ZillaSlab-Regular" family="Zilla Slab" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="7tt-K0-ldj" firstAttribute="leading" secondItem="U69-Ls-59c" secondAttribute="leading" constant="20" id="AXk-yp-VRw"/>
+                                    <constraint firstAttribute="trailing" secondItem="7tt-K0-ldj" secondAttribute="trailing" constant="20" id="ale-g5-OQr"/>
+                                    <constraint firstItem="7tt-K0-ldj" firstAttribute="top" secondItem="U69-Ls-59c" secondAttribute="top" constant="20" id="egI-Wh-wRk"/>
+                                    <constraint firstAttribute="bottom" secondItem="7tt-K0-ldj" secondAttribute="bottom" constant="20" id="x2M-dK-Aar"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U69-Ls-59c" secondAttribute="bottom" constant="40" id="DCO-Z9-RNh"/>
+                            <constraint firstItem="0Z2-ML-gZL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GC1-AT-AGA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Z2-ML-gZL" secondAttribute="trailing" id="Lwa-Ex-eR0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Z2-ML-gZL" secondAttribute="bottom" id="NOr-UK-6kM"/>
+                            <constraint firstItem="0Z2-ML-gZL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XKg-sN-fb0"/>
+                            <constraint firstItem="U69-Ls-59c" firstAttribute="top" secondItem="yBa-7e-8cL" secondAttribute="bottom" constant="12" id="YUj-0q-zcS"/>
+                            <constraint firstItem="yBa-7e-8cL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="bRd-bH-m22"/>
+                            <constraint firstItem="U69-Ls-59c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="c2Z-OR-cde"/>
+                            <constraint firstItem="yBa-7e-8cL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="gcu-ML-aCE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yBa-7e-8cL" secondAttribute="trailing" constant="60" id="h8z-Bf-2Fi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U69-Ls-59c" secondAttribute="trailing" constant="40" id="jtl-FG-OzR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="132" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Honolulu-waikiki.jpeg" width="1280" height="960"/>
+    </resources>
 </document>

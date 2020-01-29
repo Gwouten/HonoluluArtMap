@@ -34,6 +34,10 @@
 		316F071123E181420097AC84 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ZillaSlab-Light.ttf"; path = "../../../../../../Users/mobapp15/Downloads/fonts/Zilla_Slab/ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
 		316F071223E181420097AC84 /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ZillaSlab-Regular.ttf"; path = "../../../../../../Users/mobapp15/Downloads/fonts/Zilla_Slab/ZillaSlab-Regular.ttf"; sourceTree = "<group>"; };
 		316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honolulu-waikiki.jpeg"; sourceTree = "<group>"; };
+		31E2D04323E1944600FF6446 /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Regular.ttf"; sourceTree = "<group>"; };
+		31E2D04423E1944700FF6446 /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.ttf"; sourceTree = "<group>"; };
+		31E2D04523E1944800FF6446 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
+		31E2D04623E1944900FF6446 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,10 @@
 				316F06F423E17DD50097AC84 /* Main.storyboard */,
 				316F06F723E17DDB0097AC84 /* Assets.xcassets */,
 				316F06F923E17DDB0097AC84 /* LaunchScreen.storyboard */,
+				31E2D04623E1944900FF6446 /* ZillaSlab-Light.ttf */,
+				31E2D04323E1944600FF6446 /* ZillaSlab-Regular.ttf */,
+				31E2D04523E1944800FF6446 /* Dosis-Bold.ttf */,
+				31E2D04423E1944700FF6446 /* Dosis-Light.ttf */,
 				316F06FC23E17DDB0097AC84 /* Info.plist */,
 			);
 			path = HonoluluArtMap;
