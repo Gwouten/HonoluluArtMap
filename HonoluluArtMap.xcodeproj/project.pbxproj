@@ -18,6 +18,10 @@
 		316F071323E181420097AC84 /* ZillaSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 316F071123E181420097AC84 /* ZillaSlab-Light.ttf */; };
 		316F071423E181420097AC84 /* ZillaSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 316F071223E181420097AC84 /* ZillaSlab-Regular.ttf */; };
 		316F071723E1828C0097AC84 /* Honolulu-waikiki.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */; };
+		31E2D04823E195EB00FF6446 /* ArtListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2D04723E195EB00FF6446 /* ArtListViewController.swift */; };
+		31E2D04A23E1963D00FF6446 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2D04923E1963D00FF6446 /* DAO.swift */; };
+		31E2D04C23E1969800FF6446 /* Art.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2D04B23E1969800FF6446 /* Art.swift */; };
+		31E2D04E23E19D3300FF6446 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2D04D23E19D3300FF6446 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		31E2D04423E1944700FF6446 /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.ttf"; sourceTree = "<group>"; };
 		31E2D04523E1944800FF6446 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.ttf"; sourceTree = "<group>"; };
 		31E2D04623E1944900FF6446 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
+		31E2D04723E195EB00FF6446 /* ArtListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtListViewController.swift; sourceTree = "<group>"; };
+		31E2D04923E1963D00FF6446 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		31E2D04B23E1969800FF6446 /* Art.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Art.swift; sourceTree = "<group>"; };
+		31E2D04D23E19D3300FF6446 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		316F06E223E17DD50097AC84 = {
 			isa = PBXGroup;
 			children = (
+				31E2D04D23E19D3300FF6446 /* MapViewController.swift */,
+				31E2D04B23E1969800FF6446 /* Art.swift */,
+				31E2D04923E1963D00FF6446 /* DAO.swift */,
+				31E2D04723E195EB00FF6446 /* ArtListViewController.swift */,
 				316F071523E1826D0097AC84 /* Image */,
 				316F070223E181050097AC84 /* Fonts */,
 				316F06ED23E17DD50097AC84 /* HonoluluArtMap */,
@@ -182,9 +194,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31E2D04823E195EB00FF6446 /* ArtListViewController.swift in Sources */,
 				316F06F323E17DD50097AC84 /* ViewController.swift in Sources */,
 				316F06EF23E17DD50097AC84 /* AppDelegate.swift in Sources */,
 				316F06F123E17DD50097AC84 /* SceneDelegate.swift in Sources */,
+				31E2D04A23E1963D00FF6446 /* DAO.swift in Sources */,
+				31E2D04C23E1969800FF6446 /* Art.swift in Sources */,
+				31E2D04E23E19D3300FF6446 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
