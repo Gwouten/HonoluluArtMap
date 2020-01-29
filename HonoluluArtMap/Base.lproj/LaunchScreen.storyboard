@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Light.ttf">
+            <string>Dosis-Light</string>
+        </array>
+        <array key="ZillaSlab-Light.ttf">
+            <string>ZillaSlab-Light</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -13,13 +22,68 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Honolulu-waikiki.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="0oF-QS-ob1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIa-W3-HdC">
+                                <rect key="frame" x="0.0" y="458" width="375" height="174"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HONOLULU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDb-FC-Ysh">
+                                        <rect key="frame" x="0.0" y="20" width="375" height="76"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="60"/>
+                                        <color key="textColor" red="1" green="0.91858625029316721" blue="0.31691226388692151" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ARTWALK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5e-Cz-res">
+                                        <rect key="frame" x="40" y="106" width="295" height="48"/>
+                                        <fontDescription key="fontDescription" name="ZillaSlab-Light" family="Zilla Slab" pointSize="40"/>
+                                        <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="muJ-Mf-Msy">
+                                        <rect key="frame" x="20" y="100" width="335" height="1"/>
+                                        <color key="backgroundColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="PlT-ct-VYx"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eDb-FC-Ysh" firstAttribute="leading" secondItem="UIa-W3-HdC" secondAttribute="leading" id="2U2-sy-3WZ"/>
+                                    <constraint firstItem="e5e-Cz-res" firstAttribute="leading" secondItem="UIa-W3-HdC" secondAttribute="leading" constant="40" id="576-Zq-2Xb"/>
+                                    <constraint firstItem="muJ-Mf-Msy" firstAttribute="leading" secondItem="UIa-W3-HdC" secondAttribute="leading" constant="20" symbolic="YES" id="791-I1-lZn"/>
+                                    <constraint firstItem="muJ-Mf-Msy" firstAttribute="top" secondItem="eDb-FC-Ysh" secondAttribute="bottom" constant="4" id="AJX-KN-tkT"/>
+                                    <constraint firstAttribute="bottom" secondItem="e5e-Cz-res" secondAttribute="bottom" constant="20" id="AZ1-6i-0Pu"/>
+                                    <constraint firstItem="muJ-Mf-Msy" firstAttribute="top" secondItem="eDb-FC-Ysh" secondAttribute="bottom" constant="4" id="HGT-wA-YTz"/>
+                                    <constraint firstItem="e5e-Cz-res" firstAttribute="top" secondItem="muJ-Mf-Msy" secondAttribute="bottom" constant="5" id="XEL-MZ-1d7"/>
+                                    <constraint firstAttribute="trailing" secondItem="eDb-FC-Ysh" secondAttribute="trailing" id="a4b-OP-Dua"/>
+                                    <constraint firstItem="eDb-FC-Ysh" firstAttribute="top" secondItem="UIa-W3-HdC" secondAttribute="top" constant="20" id="a6L-KE-9tW"/>
+                                    <constraint firstAttribute="trailing" secondItem="muJ-Mf-Msy" secondAttribute="trailing" constant="20" symbolic="YES" id="axH-ok-faX"/>
+                                    <constraint firstAttribute="trailing" secondItem="e5e-Cz-res" secondAttribute="trailing" constant="40" id="cad-52-yIE"/>
+                                    <constraint firstItem="e5e-Cz-res" firstAttribute="top" secondItem="muJ-Mf-Msy" secondAttribute="bottom" constant="5" id="gCQ-Jg-rxI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UIa-W3-HdC" secondAttribute="bottom" constant="35" id="4Xl-qk-voB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0oF-QS-ob1" secondAttribute="bottom" id="5E6-eS-Irz"/>
+                            <constraint firstItem="UIa-W3-HdC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Fd-RE-zHE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0oF-QS-ob1" secondAttribute="trailing" id="D6O-tY-DO6"/>
+                            <constraint firstItem="0oF-QS-ob1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DYD-Md-zot"/>
+                            <constraint firstItem="0oF-QS-ob1" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="d44-sc-q04"/>
+                            <constraint firstItem="UIa-W3-HdC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dBC-MR-hk1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Honolulu-waikiki.jpeg" width="1280" height="960"/>
+    </resources>
 </document>

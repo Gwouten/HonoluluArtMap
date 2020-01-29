@@ -13,6 +13,11 @@
 		316F06F623E17DD50097AC84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F06F423E17DD50097AC84 /* Main.storyboard */; };
 		316F06F823E17DDB0097AC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 316F06F723E17DDB0097AC84 /* Assets.xcassets */; };
 		316F06FB23E17DDB0097AC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F06F923E17DDB0097AC84 /* LaunchScreen.storyboard */; };
+		316F070B23E181250097AC84 /* Dosis-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 316F070423E181250097AC84 /* Dosis-Bold.ttf */; };
+		316F070E23E181250097AC84 /* Dosis-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 316F070723E181250097AC84 /* Dosis-Light.ttf */; };
+		316F071323E181420097AC84 /* ZillaSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 316F071123E181420097AC84 /* ZillaSlab-Light.ttf */; };
+		316F071423E181420097AC84 /* ZillaSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 316F071223E181420097AC84 /* ZillaSlab-Regular.ttf */; };
+		316F071723E1828C0097AC84 /* Honolulu-waikiki.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		316F06F723E17DDB0097AC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		316F06FA23E17DDB0097AC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		316F06FC23E17DDB0097AC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316F070423E181250097AC84 /* Dosis-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Bold.ttf"; path = "../../../../../../Users/mobapp15/Downloads/fonts/Dosis/static/Dosis-Bold.ttf"; sourceTree = "<group>"; };
+		316F070723E181250097AC84 /* Dosis-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Light.ttf"; path = "../../../../../../Users/mobapp15/Downloads/fonts/Dosis/static/Dosis-Light.ttf"; sourceTree = "<group>"; };
+		316F071123E181420097AC84 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ZillaSlab-Light.ttf"; path = "../../../../../../Users/mobapp15/Downloads/fonts/Zilla_Slab/ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
+		316F071223E181420097AC84 /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ZillaSlab-Regular.ttf"; path = "../../../../../../Users/mobapp15/Downloads/fonts/Zilla_Slab/ZillaSlab-Regular.ttf"; sourceTree = "<group>"; };
+		316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honolulu-waikiki.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,8 @@
 		316F06E223E17DD50097AC84 = {
 			isa = PBXGroup;
 			children = (
+				316F071523E1826D0097AC84 /* Image */,
+				316F070223E181050097AC84 /* Fonts */,
 				316F06ED23E17DD50097AC84 /* HonoluluArtMap */,
 				316F06EC23E17DD50097AC84 /* Products */,
 			);
@@ -65,6 +77,25 @@
 				316F06FC23E17DDB0097AC84 /* Info.plist */,
 			);
 			path = HonoluluArtMap;
+			sourceTree = "<group>";
+		};
+		316F070223E181050097AC84 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				316F071123E181420097AC84 /* ZillaSlab-Light.ttf */,
+				316F071223E181420097AC84 /* ZillaSlab-Regular.ttf */,
+				316F070423E181250097AC84 /* Dosis-Bold.ttf */,
+				316F070723E181250097AC84 /* Dosis-Light.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		316F071523E1826D0097AC84 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +158,12 @@
 			files = (
 				316F06FB23E17DDB0097AC84 /* LaunchScreen.storyboard in Resources */,
 				316F06F823E17DDB0097AC84 /* Assets.xcassets in Resources */,
+				316F070E23E181250097AC84 /* Dosis-Light.ttf in Resources */,
+				316F071323E181420097AC84 /* ZillaSlab-Light.ttf in Resources */,
+				316F071423E181420097AC84 /* ZillaSlab-Regular.ttf in Resources */,
+				316F071723E1828C0097AC84 /* Honolulu-waikiki.jpeg in Resources */,
 				316F06F623E17DD50097AC84 /* Main.storyboard in Resources */,
+				316F070B23E181250097AC84 /* Dosis-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = deloof.wouter.HonoluluArtMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = deloof.wouter.HonoluluArtMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -51,6 +51,13 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ZillaSlab-Light.ttf</string>
+		<string>ZillaSlab-Regular.ttf</string>
+		<string>Dosis-Light.ttf</string>
+		<string>Dosis-Bold.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
