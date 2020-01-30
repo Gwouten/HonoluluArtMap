@@ -41,8 +41,8 @@ class Art {
         self.date = date
         self.description = description
         self.locationname = locationname
-        //self.imagefile = URL.init(fileURLWithPath: imagefile)
-        self.imagefile = URL.init(fileURLWithPath: "https://i.redd.it/kyyk3fbfitd31.png")
+        //self.imagefile = URL(string: imagefile)!
+        self.imagefile = URL(string: "https://i.redd.it/kyyk3fbfitd31.png")!
         self.discipline = discipline
         self.title = title
         self.coordinates = CLLocationCoordinate2D.init(

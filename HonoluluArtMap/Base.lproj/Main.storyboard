@@ -132,14 +132,14 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ARTWORK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6QC-fG-Mnn">
-                                                    <rect key="frame" x="15" y="15" width="93.5" height="28"/>
+                                                    <rect key="frame" x="15" y="17" width="108.5" height="26"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
                                                     <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Discipline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KLS-uU-rIC">
-                                                    <rect key="frame" x="15" y="47" width="70" height="25.5"/>
+                                                    <rect key="frame" x="15" y="47" width="86.5" height="23.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="20"/>
                                                     <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -205,33 +205,33 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDy-w6-mGe">
-                                <rect key="frame" x="16" y="352" width="343" height="1"/>
+                                <rect key="frame" x="16" y="345" width="343" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="bIU-Ag-AkT"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blP-i2-neV">
-                                <rect key="frame" x="16" y="535" width="343" height="1"/>
+                                <rect key="frame" x="16" y="550" width="343" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="YIX-Y7-ohc"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funded by the Works Progress Administration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOR-MV-Wzf">
-                                <rect key="frame" x="20" y="575" width="335" height="23"/>
-                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="18"/>
+                                <rect key="frame" x="20" y="580" width="335" height="18"/>
+                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60l-ha-wc2">
-                                <rect key="frame" x="20" y="551" width="335" height="23"/>
-                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="18"/>
+                                <rect key="frame" x="20" y="561" width="335" height="18"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-Ry-kA0">
-                                <rect key="frame" x="20" y="361" width="335" height="166"/>
+                                <rect key="frame" x="20" y="346" width="335" height="194"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -252,19 +252,19 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                             <constraint firstItem="dDy-w6-mGe" firstAttribute="leading" secondItem="MZK-3E-akD" secondAttribute="leadingMargin" id="N0T-KR-FNd"/>
                             <constraint firstItem="LTt-BO-QBY" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="Nv8-1b-zfI"/>
                             <constraint firstItem="LTt-BO-QBY" firstAttribute="top" secondItem="Ln5-EC-pp8" secondAttribute="bottom" constant="20" id="Oif-Mw-fvc"/>
-                            <constraint firstItem="60l-ha-wc2" firstAttribute="top" secondItem="blP-i2-neV" secondAttribute="bottom" constant="15" id="Oks-ma-Hpa"/>
+                            <constraint firstItem="60l-ha-wc2" firstAttribute="top" secondItem="blP-i2-neV" secondAttribute="bottom" constant="10" id="Oks-ma-Hpa"/>
                             <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="60l-ha-wc2" secondAttribute="trailing" constant="20" id="QM7-2k-Rj1"/>
-                            <constraint firstItem="dDy-w6-mGe" firstAttribute="top" secondItem="sLm-Ti-pP1" secondAttribute="bottom" constant="22" id="Qea-yp-uUd"/>
+                            <constraint firstItem="dDy-w6-mGe" firstAttribute="top" secondItem="sLm-Ti-pP1" secondAttribute="bottom" constant="15" id="Qea-yp-uUd"/>
                             <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="SnF-0X-1jN"/>
                             <constraint firstItem="0ZU-CR-r3T" firstAttribute="bottom" secondItem="kOR-MV-Wzf" secondAttribute="bottom" constant="20" id="UPD-AN-PO4"/>
                             <constraint firstItem="IEU-Ry-kA0" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="YPN-D5-0VY"/>
                             <constraint firstItem="60l-ha-wc2" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="ZxQ-Zt-giA"/>
-                            <constraint firstItem="IEU-Ry-kA0" firstAttribute="top" secondItem="dDy-w6-mGe" secondAttribute="bottom" constant="8" id="dNR-5g-aeo"/>
+                            <constraint firstItem="IEU-Ry-kA0" firstAttribute="top" secondItem="dDy-w6-mGe" secondAttribute="bottom" id="dNR-5g-aeo"/>
                             <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="kOR-MV-Wzf" secondAttribute="trailing" constant="20" id="dfB-xd-259"/>
                             <constraint firstItem="sLm-Ti-pP1" firstAttribute="top" secondItem="LTt-BO-QBY" secondAttribute="bottom" id="eom-5Z-Rmv"/>
                             <constraint firstItem="blP-i2-neV" firstAttribute="leading" secondItem="MZK-3E-akD" secondAttribute="leadingMargin" id="kUg-Oz-34f"/>
                             <constraint firstAttribute="trailing" secondItem="Ln5-EC-pp8" secondAttribute="trailing" id="mG5-Rj-4IU"/>
-                            <constraint firstItem="blP-i2-neV" firstAttribute="top" secondItem="IEU-Ry-kA0" secondAttribute="bottom" constant="8" id="oLQ-8A-4zr"/>
+                            <constraint firstItem="blP-i2-neV" firstAttribute="top" secondItem="IEU-Ry-kA0" secondAttribute="bottom" constant="10" id="oLQ-8A-4zr"/>
                             <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="oMO-Sq-5Zf"/>
                             <constraint firstItem="kOR-MV-Wzf" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="zWB-pY-M0x"/>
                             <constraint firstItem="Ln5-EC-pp8" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" id="ztB-Sn-gag"/>
@@ -306,6 +306,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IwZ-7p-Rt5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KUS-uJ-2bB">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

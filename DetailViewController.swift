@@ -24,9 +24,16 @@ class DetailViewController: UIViewController {
         artistYearLbl.text  = "Door \(artWork!.creator) - \(artWork!.date)"
         descriptionLbl.text = artWork!.description
         creditsLbl.text     = artWork!.credit
-        imageView.
+        
+        // Load image from URL
+        do {
+            let rawImage = try Data.init(contentsOf: artWork!.imagefile)
+            let image = UIImage(data: rawImage)
+            imageView.image = image
+        } catch {
+            print(error.localizedDescription)
+        }
 
-        // Do any additional setup after loading the view.
     }
     
 
