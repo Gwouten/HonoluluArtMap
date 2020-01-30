@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 class DAO {
     
@@ -14,6 +15,29 @@ class DAO {
     
     private init(){}
     
+    // Persistent Data
+    // container voor de op te slane data
+    lazy var persistentContainer:NSPersistentContainer = {
+        let container = NSPersistentContainer.init(name: "Model")
+        container.loadPersistentStores(completionHandler: {
+            (storeDescription, error) in
+        })
+        return container
+    }()
+    
+    //functie om data op te slaan
+    private func saveContext(){
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    // JSON Fetch
     func getAllArt() -> [Art]{
         
         var allArt = [Art]()
@@ -64,6 +88,7 @@ class DAO {
         } catch {
             print(error.localizedDescription)
         }
+        DAO.sharedInstance.saveContext()
         return allArt
     }
     
