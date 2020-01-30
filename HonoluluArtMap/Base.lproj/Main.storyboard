@@ -187,25 +187,25 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-EC-pp8">
-                                <rect key="frame" x="0.0" y="44" width="375" height="215"/>
+                                <rect key="frame" x="0.0" y="43" width="375" height="220"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="215" id="lgy-j3-Qxe"/>
+                                    <constraint firstAttribute="height" constant="220" id="lgy-j3-Qxe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By artist - 2003" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLm-Ti-pP1">
-                                <rect key="frame" x="20" y="307" width="335" height="23"/>
+                                <rect key="frame" x="20" y="312" width="335" height="23"/>
                                 <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artwork Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-BO-QBY">
-                                <rect key="frame" x="20" y="279" width="335" height="28"/>
+                                <rect key="frame" x="20" y="284" width="335" height="28"/>
                                 <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDy-w6-mGe">
-                                <rect key="frame" x="16" y="345" width="343" height="1"/>
+                                <rect key="frame" x="16" y="350" width="343" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="bIU-Ag-AkT"/>
@@ -231,7 +231,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-Ry-kA0">
-                                <rect key="frame" x="20" y="346" width="335" height="194"/>
+                                <rect key="frame" x="20" y="351" width="335" height="189"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -241,7 +241,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="2RQ-un-2rc"/>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" constant="-1" id="2RQ-un-2rc"/>
                             <constraint firstItem="sLm-Ti-pP1" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="5Fr-cU-va4"/>
                             <constraint firstItem="kOR-MV-Wzf" firstAttribute="top" secondItem="60l-ha-wc2" secondAttribute="bottom" constant="1" id="5of-dr-X0E"/>
                             <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="LTt-BO-QBY" secondAttribute="trailing" constant="20" id="66c-cu-B76"/>
@@ -251,11 +251,11 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                             <constraint firstItem="blP-i2-neV" firstAttribute="trailing" secondItem="MZK-3E-akD" secondAttribute="trailingMargin" id="KJP-Uk-PuN"/>
                             <constraint firstItem="dDy-w6-mGe" firstAttribute="leading" secondItem="MZK-3E-akD" secondAttribute="leadingMargin" id="N0T-KR-FNd"/>
                             <constraint firstItem="LTt-BO-QBY" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="Nv8-1b-zfI"/>
-                            <constraint firstItem="LTt-BO-QBY" firstAttribute="top" secondItem="Ln5-EC-pp8" secondAttribute="bottom" constant="20" id="Oif-Mw-fvc"/>
+                            <constraint firstItem="LTt-BO-QBY" firstAttribute="top" secondItem="Ln5-EC-pp8" secondAttribute="bottom" constant="21" id="Oif-Mw-fvc"/>
                             <constraint firstItem="60l-ha-wc2" firstAttribute="top" secondItem="blP-i2-neV" secondAttribute="bottom" constant="10" id="Oks-ma-Hpa"/>
                             <constraint firstItem="0ZU-CR-r3T" firstAttribute="trailing" secondItem="60l-ha-wc2" secondAttribute="trailing" constant="20" id="QM7-2k-Rj1"/>
                             <constraint firstItem="dDy-w6-mGe" firstAttribute="top" secondItem="sLm-Ti-pP1" secondAttribute="bottom" constant="15" id="Qea-yp-uUd"/>
-                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="SnF-0X-1jN"/>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" constant="-1" id="SnF-0X-1jN"/>
                             <constraint firstItem="0ZU-CR-r3T" firstAttribute="bottom" secondItem="kOR-MV-Wzf" secondAttribute="bottom" constant="20" id="UPD-AN-PO4"/>
                             <constraint firstItem="IEU-Ry-kA0" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="YPN-D5-0VY"/>
                             <constraint firstItem="60l-ha-wc2" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="ZxQ-Zt-giA"/>
@@ -265,7 +265,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                             <constraint firstItem="blP-i2-neV" firstAttribute="leading" secondItem="MZK-3E-akD" secondAttribute="leadingMargin" id="kUg-Oz-34f"/>
                             <constraint firstAttribute="trailing" secondItem="Ln5-EC-pp8" secondAttribute="trailing" id="mG5-Rj-4IU"/>
                             <constraint firstItem="blP-i2-neV" firstAttribute="top" secondItem="IEU-Ry-kA0" secondAttribute="bottom" constant="10" id="oLQ-8A-4zr"/>
-                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" id="oMO-Sq-5Zf"/>
+                            <constraint firstItem="Ln5-EC-pp8" firstAttribute="top" secondItem="0ZU-CR-r3T" secondAttribute="top" constant="-1" id="oMO-Sq-5Zf"/>
                             <constraint firstItem="kOR-MV-Wzf" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" constant="20" id="zWB-pY-M0x"/>
                             <constraint firstItem="Ln5-EC-pp8" firstAttribute="leading" secondItem="0ZU-CR-r3T" secondAttribute="leading" id="ztB-Sn-gag"/>
                         </constraints>
@@ -284,7 +284,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
             </objects>
             <point key="canvasLocation" x="3340" y="877.51124437781118"/>
         </scene>
-        <!--Art Map-->
+        <!--Map View Controller-->
         <scene sceneID="irp-CK-aUH">
             <objects>
                 <viewController id="J6R-zW-6Bg" customClass="MapViewController" customModule="HonoluluArtMap" customModuleProvider="target" sceneMemberID="viewController">
@@ -293,7 +293,10 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzo-MU-JZn">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <connections>
+                                    <outlet property="delegate" destination="J6R-zW-6Bg" id="hJ9-e9-Hl3"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -305,14 +308,15 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DhZ-rf-IWr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Art Map" image="map" catalog="system" id="hbW-gK-Yee"/>
+                    <navigationItem key="navigationItem" id="3kH-Gc-yXO"/>
                     <connections>
                         <outlet property="mapView" destination="Fzo-MU-JZn" id="YGr-us-fcg"/>
+                        <segue destination="nqb-SW-MSR" kind="show" identifier="mapToDetail" id="P30-an-R2s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIe-5P-XkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1565.5999999999999" y="30.134932533733135"/>
+            <point key="canvasLocation" x="2504.8000000000002" y="30.134932533733135"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="O3k-vb-lhe">
@@ -327,7 +331,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                         <color key="selectedImageTintColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="J6R-zW-6Bg" kind="relationship" relationship="viewControllers" id="cbH-Ab-bGF"/>
+                        <segue destination="6TL-3t-0CO" kind="relationship" relationship="viewControllers" id="cbH-Ab-bGF"/>
                         <segue destination="kLr-E5-nHg" kind="relationship" relationship="viewControllers" id="TNe-It-PXp"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="C6w-mK-XMW"/>
                     </connections>
@@ -360,6 +364,25 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
             </objects>
             <point key="canvasLocation" x="1565.5999999999999" y="877.51124437781118"/>
         </scene>
+        <!--Art Map-->
+        <scene sceneID="yDk-i2-1C5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6TL-3t-0CO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Art Map" image="map" catalog="system" id="hbW-gK-Yee"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IOA-Ao-83Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J6R-zW-6Bg" kind="relationship" relationship="rootViewController" id="jgX-vk-WX0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCk-y4-Bsz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565.5999999999999" y="30.134932533733135"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Honolulu-waikiki.jpeg" width="1280" height="960"/>
@@ -367,4 +390,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
         <image name="list.bullet" catalog="system" width="64" height="44"/>
         <image name="map" catalog="system" width="64" height="56"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="P7S-W9-qlB"/>
+    </inferredMetricsTieBreakers>
 </document>

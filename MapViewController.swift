@@ -37,8 +37,8 @@ class MapViewController: UIViewController {
         
         // definieer oppervlak van de kaart
         let span = MKCoordinateSpan.init(
-            latitudeDelta: maxLat - minLat + 0.125,
-            longitudeDelta: maxLon - minLon + 0.125
+            latitudeDelta: maxLat - minLat + 0.1,
+            longitudeDelta: maxLon - minLon + 0.1
         )
         
         // definier centraal punt van de kaart
@@ -46,11 +46,6 @@ class MapViewController: UIViewController {
             latitude: minLat + (maxLat - minLat) / 2,
             longitude: minLon + (maxLon - minLon) / 2
         )
-        
-        print(maxLat)
-        print(minLat)
-        print(maxLon)
-        print(minLon)
         
         // Pas alles toe op de kaart
         mapView.region = MKCoordinateRegion.init(center: center, span: span)
@@ -66,11 +61,23 @@ class MapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+
 
 }
 
 extension MapViewController: MKMapViewDelegate {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let annotation = sender as! MKAnnotationView
+        let artAnnotation = annotation.annotation as! Art
+        let destination = segue.destination as! DetailViewController
+        destination.artWork = artAnnotation
+    }
     
-    
+    // Doe iets als een marker getriggerd wordt
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        performSegue(withIdentifier: "mapToDetail", sender: view)
+    }
+ 
 }
