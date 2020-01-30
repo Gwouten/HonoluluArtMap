@@ -124,7 +124,7 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="6QC-fG-Mnn" detailTextLabel="KLS-uU-rIC" style="IBUITableViewCellStyleSubtitle" id="t8V-po-NQ5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="detailButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" focusStyle="custom" textLabel="6QC-fG-Mnn" detailTextLabel="KLS-uU-rIC" style="IBUITableViewCellStyleSubtitle" id="t8V-po-NQ5">
                                         <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t8V-po-NQ5" id="AUx-SK-DWt">
@@ -132,14 +132,14 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="ARTWORK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6QC-fG-Mnn">
-                                                    <rect key="frame" x="15" y="17" width="108.5" height="26"/>
+                                                    <rect key="frame" x="15" y="15" width="93.5" height="28"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
                                                     <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Discipline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KLS-uU-rIC">
-                                                    <rect key="frame" x="15" y="47" width="86.5" height="23.5"/>
+                                                    <rect key="frame" x="15" y="47" width="70" height="25.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="20"/>
                                                     <color key="textColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -291,14 +291,28 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                     <view key="view" contentMode="scaleToFill" id="CpT-TY-zkb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fzo-MU-JZn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DhZ-rf-IWr" firstAttribute="trailing" secondItem="Fzo-MU-JZn" secondAttribute="trailing" id="ahK-3X-n7s"/>
+                            <constraint firstItem="Fzo-MU-JZn" firstAttribute="top" secondItem="DhZ-rf-IWr" secondAttribute="top" id="cJP-oL-kc4"/>
+                            <constraint firstItem="Fzo-MU-JZn" firstAttribute="leading" secondItem="DhZ-rf-IWr" secondAttribute="leading" id="cKM-iN-Esa"/>
+                            <constraint firstAttribute="bottom" secondItem="Fzo-MU-JZn" secondAttribute="bottom" id="iaV-qa-zeB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DhZ-rf-IWr"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Art Map" image="map" catalog="system" id="hbW-gK-Yee"/>
+                    <connections>
+                        <outlet property="mapView" destination="Fzo-MU-JZn" id="YGr-us-fcg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IIe-5P-XkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1566" y="31"/>
+            <point key="canvasLocation" x="1565.5999999999999" y="30.134932533733135"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="O3k-vb-lhe">
@@ -331,6 +345,11 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nUu-PO-Hxn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="1" green="0.91858625029999996" blue="0.31691226389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ZillaSlab-Regular" family="Zilla Slab" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

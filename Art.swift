@@ -9,16 +9,16 @@
 import Foundation
 import MapKit
 
-class Art {
+class Art:NSObject, MKAnnotation {
     
     var creator:String
     var date:String
-    var description:String
+    var desc:String
     var locationname:String
     var imagefile:URL
     var discipline:String
-    var title:String
-    var coordinates:CLLocationCoordinate2D
+    var title:String?
+    var coordinate:CLLocationCoordinate2D
     var credit:String
     
     init(
@@ -39,13 +39,13 @@ class Art {
         
         self.creator = creator
         self.date = date
-        self.description = description
+        self.desc = description
         self.locationname = locationname
         //self.imagefile = URL(string: imagefile)!
         self.imagefile = URL(string: "https://i.redd.it/kyyk3fbfitd31.png")!
         self.discipline = discipline
         self.title = title
-        self.coordinates = CLLocationCoordinate2D.init(
+        self.coordinate = CLLocationCoordinate2D.init(
             latitude: coordinateLat!,
             longitude: coordinateLon!
         )

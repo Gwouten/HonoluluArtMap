@@ -16,7 +16,6 @@ class ArtListViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         art = DAO.sharedInstance.getAllArt()
-        //print(art)
         // Do any additional setup after loading the view.
     }
     
@@ -44,6 +43,5 @@ class ArtListViewController: UIViewController, UITableViewDataSource, UITableVie
             destination.artWork = selectedArt
         }
     }
-    
 
 }

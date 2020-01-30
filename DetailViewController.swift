@@ -22,7 +22,7 @@ class DetailViewController: UIViewController {
         
         titleLbl.text       = artWork!.title
         artistYearLbl.text  = "Door \(artWork!.creator) - \(artWork!.date)"
-        descriptionLbl.text = artWork!.description
+        descriptionLbl.text = artWork!.desc
         creditsLbl.text     = artWork!.credit
         
         // Load image from URL
