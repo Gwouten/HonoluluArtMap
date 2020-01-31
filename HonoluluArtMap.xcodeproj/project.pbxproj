@@ -15,6 +15,7 @@
 		316F06FB23E17DDB0097AC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 316F06F923E17DDB0097AC84 /* LaunchScreen.storyboard */; };
 		316F071723E1828C0097AC84 /* Honolulu-waikiki.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */; };
 		31B6878923E42EE500A0D39A /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B6878823E42EE500A0D39A /* Annotation.swift */; };
+		31B6878B23E45F7200A0D39A /* Screen Shot 2020-01-31 at 14.12.42.png in Resources */ = {isa = PBXBuildFile; fileRef = 31B6878A23E45F7200A0D39A /* Screen Shot 2020-01-31 at 14.12.42.png */; };
 		31CABFA123E32C4400285814 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31CABF9F23E32C4400285814 /* Model.xcdatamodeld */; };
 		31E2D04823E195EB00FF6446 /* ArtListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2D04723E195EB00FF6446 /* ArtListViewController.swift */; };
 		31E2D04A23E1963D00FF6446 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2D04923E1963D00FF6446 /* DAO.swift */; };
@@ -38,6 +39,7 @@
 		316F06FC23E17DDB0097AC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		316F071623E1828C0097AC84 /* Honolulu-waikiki.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Honolulu-waikiki.jpeg"; sourceTree = "<group>"; };
 		31B6878823E42EE500A0D39A /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		31B6878A23E45F7200A0D39A /* Screen Shot 2020-01-31 at 14.12.42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2020-01-31 at 14.12.42.png"; sourceTree = "<group>"; };
 		31CABFA023E32C4400285814 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		31E2D04723E195EB00FF6446 /* ArtListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtListViewController.swift; sourceTree = "<group>"; };
 		31E2D04923E1963D00FF6446 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				31E2D05023E1C14900FF6446 /* ZillaSlab-Regular.ttf */,
 				316F06F723E17DDB0097AC84 /* Assets.xcassets */,
 				316F06F923E17DDB0097AC84 /* LaunchScreen.storyboard */,
+				31B6878A23E45F7200A0D39A /* Screen Shot 2020-01-31 at 14.12.42.png */,
 				316F06FC23E17DDB0097AC84 /* Info.plist */,
 			);
 			path = HonoluluArtMap;
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31E2D05223E1C14900FF6446 /* ZillaSlab-Regular.ttf in Resources */,
+				31B6878B23E45F7200A0D39A /* Screen Shot 2020-01-31 at 14.12.42.png in Resources */,
 				316F06FB23E17DDB0097AC84 /* LaunchScreen.storyboard in Resources */,
 				31E2D05623E1C16E00FF6446 /* Dosis-Light.ttf in Resources */,
 				31E2D05523E1C16E00FF6446 /* Dosis-Bold.ttf in Resources */,
