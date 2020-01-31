@@ -47,7 +47,7 @@ class ArtListViewController: UIViewController, UITableViewDataSource, UITableVie
                 locationname: selectedArt.locationname,
                 imagefile: selectedArt.imagefile,
                 discipline: selectedArt.discipline,
-                title: selectedArt.title!,
+                title: selectedArt.title,
                 latitude: selectedArt.latitude,
                 longitude: selectedArt.longitude,
                 credit: selectedArt.credit

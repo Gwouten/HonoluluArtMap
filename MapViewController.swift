@@ -66,7 +66,7 @@ class MapViewController: UIViewController {
                 locationname: piece.locationname,
                 imagefile: piece.imagefile,
                 discipline: piece.discipline,
-                title: piece.title!,
+                title: piece.title,
                 latitude: piece.latitude,
                 longitude: piece.longitude,
                 credit: piece.credit

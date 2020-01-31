@@ -185,55 +185,55 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
             <objects>
                 <viewController id="nqb-SW-MSR" customClass="DetailViewController" customModule="HonoluluArtMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZK-3E-akD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ln5-EC-pp8">
-                                <rect key="frame" x="0.0" y="-6" width="375" height="225"/>
+                                <rect key="frame" x="0.0" y="38" width="375" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="225" id="lgy-j3-Qxe"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By artist - 2003" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLm-Ti-pP1">
-                                <rect key="frame" x="20" y="262" width="335" height="23"/>
+                                <rect key="frame" x="20" y="306" width="335" height="23"/>
                                 <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artwork Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTt-BO-QBY">
-                                <rect key="frame" x="20" y="234" width="335" height="28"/>
+                                <rect key="frame" x="20" y="278" width="335" height="28"/>
                                 <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDy-w6-mGe">
-                                <rect key="frame" x="16" y="300" width="343" height="1"/>
+                                <rect key="frame" x="16" y="344" width="343" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="bIU-Ag-AkT"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blP-i2-neV">
-                                <rect key="frame" x="16" y="506" width="343" height="1"/>
+                                <rect key="frame" x="16" y="550" width="343" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="YIX-Y7-ohc"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Funded by the Works Progress Administration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOR-MV-Wzf">
-                                <rect key="frame" x="20" y="536" width="335" height="18"/>
+                                <rect key="frame" x="20" y="580" width="335" height="18"/>
                                 <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60l-ha-wc2">
-                                <rect key="frame" x="20" y="517" width="335" height="18"/>
+                                <rect key="frame" x="20" y="561" width="335" height="18"/>
                                 <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-Ry-kA0">
-                                <rect key="frame" x="20" y="301" width="335" height="205"/>
+                                <rect key="frame" x="20" y="345" width="335" height="205"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -400,6 +400,6 @@ Honolulu is een belangrijk knooppunt voor de lucht- en scheepvaart, en is ook vo
         <image name="map" catalog="system" width="64" height="56"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="P7S-W9-qlB"/>
+        <segue reference="P30-an-R2s"/>
     </inferredMetricsTieBreakers>
 </document>

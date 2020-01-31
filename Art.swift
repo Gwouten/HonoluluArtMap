@@ -17,7 +17,7 @@ class Art:NSObject {
     var locationname:String
     var imagefile:URL
     var discipline:String
-    var title:String?
+    var title:String
     var credit:String
     var latitude:Double
     var longitude:Double
