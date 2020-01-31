@@ -40,7 +40,19 @@ class ArtListViewController: UIViewController, UITableViewDataSource, UITableVie
             let selectedIndexPath = tableView.indexPath(for: sender as! UITableViewCell)
             let selectedArt = art[selectedIndexPath!.row]
             let destination = segue.destination as! DetailViewController
-            destination.artWork = selectedArt
+            let newAnnotation = Annotation.init(
+                creator: selectedArt.creator,
+                date: selectedArt.date,
+                description: selectedArt.desc,
+                locationname: selectedArt.locationname,
+                imagefile: selectedArt.imagefile,
+                discipline: selectedArt.discipline,
+                title: selectedArt.title!,
+                latitude: selectedArt.latitude,
+                longitude: selectedArt.longitude,
+                credit: selectedArt.credit
+            )
+            destination.artWork = newAnnotation
         }
     }
 

@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionLbl: UITextView!
     @IBOutlet weak var creditsLbl: UILabel!
     @IBOutlet weak var imageView: UIImageView!
-    var artWork:Art?
+    var artWork:Annotation?
 
     override func viewDidLoad() {
         super.viewDidLoad()

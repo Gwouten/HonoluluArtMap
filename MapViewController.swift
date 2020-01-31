@@ -82,7 +82,7 @@ extension MapViewController: MKMapViewDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let annotation = sender as! MKAnnotationView
-        let artAnnotation = annotation.annotation as! Art
+        let artAnnotation = annotation.annotation as! Annotation
         let destination = segue.destination as! DetailViewController
         destination.artWork = artAnnotation
     }
