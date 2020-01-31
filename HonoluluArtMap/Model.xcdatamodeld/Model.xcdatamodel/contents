@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19C57" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Art" representedClassName="Art" syncable="YES" codeGenerationType="class">
-        <attribute name="coordinate" attributeType="String"/>
+    <entity name="Artwork" representedClassName="Artwork" syncable="YES" codeGenerationType="class">
         <attribute name="creator" attributeType="String"/>
         <attribute name="credit" attributeType="String"/>
         <attribute name="date" attributeType="String"/>
         <attribute name="desc" attributeType="String"/>
         <attribute name="discipline" attributeType="String"/>
-        <attribute name="imagefile" attributeType="URI"/>
+        <attribute name="imagefile" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="locationname" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Art" positionX="-63" positionY="-18" width="128" height="178"/>
+        <element name="Artwork" positionX="-63" positionY="-18" width="128" height="193"/>
     </elements>
 </model>

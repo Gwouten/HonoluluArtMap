@@ -1,16 +1,17 @@
 //
-//  Art.swift
+//  Annotation.swift
 //  HonoluluArtMap
 //
-//  Created by mobapp15 on 29/01/2020.
+//  Created by mobapp15 on 31/01/2020.
 //  Copyright © 2020 mobapp15. All rights reserved.
 //
 
 import Foundation
 import MapKit
 
-class Art:NSObject {    
+class Annotation: NSObject, MKAnnotation {
     
+    var coordinate: CLLocationCoordinate2D
     var creator:String
     var date:String
     var desc:String
@@ -19,19 +20,17 @@ class Art:NSObject {
     var discipline:String
     var title:String?
     var credit:String
-    var latitude:Double
-    var longitude:Double
     
     init(
         creator:String,
         date:String,
         description:String,
         locationname:String,
-        imagefile:String,
+        imagefile:URL,
         discipline:String,
         title:String,
-        latitude:String,
-        longitude:String,
+        latitude:Double,
+        longitude:Double,
         credit:String
     ){
         self.creator = creator
@@ -43,8 +42,14 @@ class Art:NSObject {
         self.discipline = discipline
         self.title = title
         self.credit = credit
-        self.latitude = Double(latitude)!
-        self.longitude = Double(longitude)!
+        self.coordinate = CLLocationCoordinate2D.init(
+            latitude: latitude,
+            longitude: longitude
+        )
     }
     
 }
+
+
+
+

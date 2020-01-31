@@ -12,7 +12,8 @@ import CoreData
 class DAO {
     
     static var sharedInstance = DAO.init()
-    
+    static let settings = UserDefaults.standard
+
     private init(){}
     
     // Persistent Data
@@ -37,7 +38,30 @@ class DAO {
         }
     }
     
-    // JSON Fetch
+    // MARK: CRUD
+    
+    func saveData(art:[Art]){
+        
+        // loopen over Art array om 1 per 1 alles weg te schrijven naar core data
+        for piece in art {
+            let newArt = Artwork.init(context:persistentContainer.viewContext)
+            newArt.creator = piece.creator
+            newArt.credit = piece.credit
+            newArt.date = piece.date
+            newArt.desc = piece.desc
+            newArt.discipline = piece.discipline
+            newArt.imagefile = piece.imagefile.description
+            newArt.locationname = piece.locationname
+            newArt.title = piece.title
+            newArt.latitude = piece.latitude
+            newArt.longitude = piece.longitude
+        }
+        
+        // boolean en timestamp opslaan in user default om te zeggen dat de data al gedownload is
+        
+    }
+    
+    // MARK: JSON
     func getAllArt() -> [Art]{
         
         var allArt = [Art]()
@@ -88,7 +112,7 @@ class DAO {
         } catch {
             print(error.localizedDescription)
         }
-        DAO.sharedInstance.saveContext()
+        saveData(art: allArt)
         return allArt
     }
     
